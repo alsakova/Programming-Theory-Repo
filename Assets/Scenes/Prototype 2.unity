@@ -2070,6 +2070,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4b1ac70d58af1e4d90d7fea98de6145, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chickenText: {fileID: 797309398}
+  dogText: {fileID: 31322485}
 --- !u!4 &1637806803
 Transform:
   m_ObjectHideFlags: 0
