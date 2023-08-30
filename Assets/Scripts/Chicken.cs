@@ -4,13 +4,14 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+// INHERITANCE
 public class Chicken : Animal
 {
     public Chicken(TMP_Text text) : base(text)
     {
     }
 
-
+    // POLYMORPHISM
     override public void IMHere()
     {
         ShowAction("Eating...");

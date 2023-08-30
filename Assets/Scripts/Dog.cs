@@ -5,12 +5,14 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+// INHERITANCE
 public class Dog : Animal
 {
     public Dog(TMP_Text text) : base(text)
     {
     }
 
+    // POLYMORPHISM
     override public void IMHere()
     {
         ShowAction("Happy!");

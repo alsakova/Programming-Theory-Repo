@@ -7,6 +7,25 @@ using UnityEngine.UI;
 
 public class Animal 
 {
+    private string m_name;
+
+    // ENCAPSULATION
+    public string name
+    {
+        get { return m_name; }
+        set
+        {
+            if (value.Length > 6)
+            {
+                Debug.LogError("Name cannot be more than six letters");
+            }
+            else
+            {
+                m_name = value;
+            }
+        }
+    }
+
     private TMP_Text text;
 
     public Animal(TMP_Text text)
@@ -34,7 +53,8 @@ public class Animal
     
     }
 
-   virtual protected void ShowAction(string action)
+    // ABSTRACTION
+    virtual protected void ShowAction(string action)
     {
         Debug.Log(action);
         text.text = action;
